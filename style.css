@@ -1,0 +1,308 @@
+*{
+    font-family: 'Kanit', sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    background-color: rgb(52, 110, 110);
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2d2f30;
+  }
+  
+  nav li {
+    float: left;
+    
+  }
+  
+  nav li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 25px 45px;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.5rem;
+    background-color: #2d2f30;
+    
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  nav li a:hover {
+    background-color: #06615c;
+  }
+
+/*Fuentes Tamanos*/
+  h1{
+    font-size: 4rem;
+    color: white;
+    
+  }
+
+  h2 {
+    font-size: 2.5rem ;
+  }
+
+  h3 {
+    font-size: 2rem ;
+    color: rgb(241, 228, 203);
+  }
+
+  ul{
+    color: rgb(241, 228, 203);
+    font-size: 1rem;
+   
+  }
+
+p{
+    font-size: 1rem;
+    font-style: italic;
+    color: white;
+}
+/*Organizacion de Elementos header*/
+.banner-container{
+    display: flex;
+    grid-template-rows: repeat(2, 50%);
+    width: 100%;
+    height: 650px;
+}
+
+.banner-element-1{
+  width: 40%;
+  height: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  
+   
+   
+    
+}
+
+.banner-element-2{
+  width: 50%;
+  height: 100%;
+    margin: 0;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+  header img{
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    
+    
+       
+    
+  }
+/*Organizacion de Elementos Section Experience jobs*/
+.box-container-experience{
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    background-color: #2d2f30;
+    
+}
+.main-container{
+  
+  width: 100%;
+  height: 100%;
+}
+.main-container h2{
+    
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    background-color:  #2d2f30;
+    color: white;
+
+}
+.second-container{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color:  #2d2f30;
+}
+.elements{
+  
+    background-color: aliceblue;
+    display: flex;
+    grid-template-rows: repeat(3, 30%);
+    height: 550px;
+    align-items: center;
+    justify-content: center;
+    
+  
+}
+.first-job{
+    
+    margin: 5%;
+    padding: 25px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    border-radius: 25px;
+    
+}
+
+.second-job{
+    margin: 5%;
+    padding: 25px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    border-radius: 25px;
+    
+}
+
+.third-job{
+    margin: 5%;
+    padding: 25px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    border-radius: 25px;
+}
+
+.second-container ul li{
+    list-style-type: none;
+    
+}
+
+/*Educacion*/
+
+#educacion {
+  background-color: #2d2f30;
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  padding:2px;
+    
+}
+.aplied-studies h2{
+  text-align: center;
+  color: white;
+  background-color: #2d2f30;
+}
+
+
+.main-container-educacion {
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  background-color: #2d2f30;
+  padding: 10px;
+  display: inline-flex;
+  align-items:center;
+  text-align: center;
+     
+}
+
+.universidad {
+  height: 200px;
+  list-style-type: none;
+  background-color: #2d2f30;
+  padding: 5px;
+  
+}
+.codecademy {
+  height: 200px;
+  list-style-type: none;
+  background-color: #2d2f30;
+  padding: 5px;
+}
+
+.universidad h3{
+  background-color: #2d2f30;
+}
+
+.codecademy h3{
+  background-color: #2d2f30;
+}
+.universidad p{
+  background-color: #2d2f30;
+}
+
+.codecademy p{
+  background-color: #2d2f30;
+}
+
+/*Organizacion Skills*/
+#skill{
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+#skill h2{
+  padding: 20px;
+}
+
+.skill-container{
+  list-style-type: none;
+  display: flex;
+}
+
+.skill-container li{
+  color: white;
+  width: 10%;
+  height: 25px;
+  background-color: #2d2f30;
+  border-radius: 40%;
+}
+
+.skill-container li:hover{
+  background-color: #7b8185
+}
+
+/*Organizacion footer*/
+
+.footer-container{
+  margin: 20px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  text-align:left;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(86, 88, 88);
+}
+
+.contact-information{
+  background-color: rgb(86, 88, 88);
+}
+
+.contact-information p{
+  width: 60%;
+  
+  font-size: 1rem;
+  background-color: rgb(86, 88, 88);
+  
+}
+
+.social-media{
+  
+  width: 50%;
+  display: inline-flex;
+  justify-content: space-around;
+  background-color: rgb(86, 88, 88);
+    
+}
+
+.social-media img{
+  background-color: rgb(86, 88, 88);
+}
