@@ -15,74 +15,48 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="">About Me</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Gallery</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
+      <nav class="nav-container">
+        <div class="nav-name">
+          <a href="">Jorneth Alvarado</a>
+        </div>
+        <div class="nav-bar">
+          <ul>
+            <li><a href="">About Me</a></li>
+            <li><a href="">Goals</a></li>
+            <li><a href="">Experience</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
       </nav>
-      <div class="banner-container">
-        <div class="banner-element-1">
-          <h1>My Portfolio</h1>
-          <h2>Jorneth Alvarado</h2>
-          <p>Front-End Developer, Recruiter, Marketing</p>
-          <p>Time Managment, Reliable, Focus</p>
+      <section class="banner-container">
+        <div class="banner">
+          <h1 class="hi-element">Hi, I'm Jorneth</h1>
+          <h2 class="title-element">Front-End Developer</h2>
         </div>
-        <div class="banner-element-2">
-          <img
-            src="./resources/PXL_20230922_000527405.jpg"
-            alt="jorneth alvarado"
-            class="personalphoto"
-          />
-        </div>
-      </div>
+      </section>
     </header>
-
-    <section id="experiencia" class="box-container-experience">
-      <div class="main-container">
-        <h2>Job Experience</h2>
-      </div>
-
-      <div class="second-container">
-        <ul>
-          <div class="elements">
-            <div class="first-job">
-              <li>
-                <h3>Talent Movers</h3>
-                <p>Recruiter & Virtual Assistant</p>
-                <p>March 2022 - Present</p>
-                <p>
-                  Job Dutties: Remote. Conduit Interviews, and other
-                  administrative task related to the position
-                </p>
-              </li>
-            </div>
-            <div class="second-job">
-              <li>
-                <h3>Global Exchange International</h3>
-                <p>Admission Analyst & Telesales Representative</p>
-                <p>November 2021 - June 2022</p>
-                <p>
-                  Job Dutties: Remote, Telesales, call the prospect candidate to
-                  offer the service and other task related to the position
-                </p>
-              </li>
-            </div>
-            <div class="third-job">
-              <li>
-                <h3>Comercial Yuelsa</h3>
-                <p>Sales Representative & Supervisor</p>
-                <p>February 2014 - January 2017</p>
-                <p>
-                  Job Dutties: Remote, Telesales, call the prospect candidate to
-                  offer the service and other task related to the position
-                </p>
-              </li>
-            </div>
-          </div>
-        </ul>
+    <section class="aboutMe">
+      <div class="aboutMe-container">
+        <img
+          src="./resources/PXL_20230922_000527405.jpg"
+          alt=""
+          width="200"
+          height="200"
+        />
+        <h2>Who I Am?</h2>
+        <p>
+          "Soy Jorneth, un entusiasta del mundo de la programación y un amante
+          de los videojuegos. <br />
+          Mi energía y espíritu libre me inspiran a buscar la perfección en mi
+          trabajo como desarrollador. <br />
+          En mi sitio web, te invito a explorar mi portafolio, donde encontrarás
+          <br />
+          ejemplos de mi pasión convertida en hermosas interfaces y experiencias
+          web. <br />
+          Únete a mí en este viaje donde la perfección es mi meta y <br />
+          la creación de experiencias digitales excepcionales es mi enfoque."
+        </p>
       </div>
     </section>
 
@@ -119,10 +93,16 @@
       </div>
     </section>
     <footer class="footer-container">
+      <div class="footer-menu">
+        <ul>
+          <li><a href="">About Me</a></li>
+          <li><a href="">Goals</a></li>
+          <li><a href="">Experience</a></li>
+          <li><a href="">Projects</a></li>
+        </ul>
+      </div>
       <div class="contact-information">
-        <p>Jorneth Alvarado +584244998731</p>
-        <p>jorneth2502@gmail.com</p>
-        <p>2023</p>
+        <button class="contact-button">Contact Me</button>
       </div>
       <div class="social-media">
         <img
@@ -148,5 +128,6 @@
         />
       </div>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
