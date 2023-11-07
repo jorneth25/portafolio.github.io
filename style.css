@@ -142,6 +142,31 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 3%, rgba(255,255,255,0.5270483
   
 }
 
+/*Skills Container*/
+#skill{
+  background-color: #0D0D0D;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  
+  }
+
+  #skill h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+.skill-container{
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.skill-container img{
+  
+}
 /*Footer Container*/
 footer{
   padding-top: 50px;
