@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 *,*::before, *::after{
   box-sizing: border-box;
+  
 }
 
 body{
+  
   margin: 0;
   padding: 0;
   font-family: "Ubuntu", sans-serif;
+  background-color: #0aa5ff;
 }
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+
 /*Nav Bar Container*/
 
 a,
@@ -23,7 +29,7 @@ button {
   left: 0;
   width: 100%;
   height: 90px;
-  background-color: hsl(0, 0%, 12%);
+  background-color: hsl(0, 0%, 0%);
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
@@ -31,29 +37,27 @@ button {
   transition: transform 0.5s ease;
 }
 
-.navbar .logo i {
-  color: #0aa5ff;
-  font-size: 22px;
-}
+
 
 .navbar .logo a {
-  font-size: 24px;
+  
+  font-size: 1.5rem;
   font-weight: 700;
   color: white;
-  margin-left: 12px;
+  
 }
 
 
 .menu{
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .menu-links{
   display: flex;
-  gap: 24px;
-  border-right: 1px solid #999999;
+  gap: 1.75rem;
+    border-right: 1px solid #999999;
   padding-inline: 24px;
 
 }
@@ -74,7 +78,7 @@ button {
   color: #999999;
   border-radius: 10px;
   border: 2px solid #0aa5ff;
-  transition: 0.2s;
+  transition: 0.25s;
   
 }
 
@@ -96,28 +100,37 @@ button {
     display: none;
   }
   .menu-btn {
-    display: block;
+    display:block;
   }
 }
+
+@media screen and (max-width: 400px) {
+  body {
+    background-color: olive;
+  }
+}
+
+/*--------------------------------------------------------------*/
 /*Banner Container*/
 
 .banner-container {
-  z-index: -1;
-  position:absolute;
-  width: 100%;
-  height: 850px;
+   
+  position: relative;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  z-index: -2;
+  width: auto;
+  height: 900px;
   background-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 1),
     rgba(0, 0, 0, 0.1)
    ), url(./resources/aurora-1197753.jpg);
-  background-position: center;
+  background-position:center ;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;  
   
-  
-
 }
 
 .banner {
@@ -137,6 +150,9 @@ button {
   color: #9FB0BF;
 }
 
+
+/*--------------------------------------------------------------*/
+
 /*About me container*/
 .aboutMe-container{
   position:relative;
@@ -147,10 +163,14 @@ button {
   text-align: center;
   height: 800px;
   background: #9FB0BF;
-  /*background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,1) 3%, rgba(255,255,255,0.5270483193277311) 76%, rgba(255,255,255,0) 98%, rgba(255,255,255,0) 100%);
- */ }
+   }
 
+
+.aboutMe-container{
+  width: 100%;
+  
+  background-color: #000000;
+}
 .aboutMe-container img{
   
   border-radius: 50%;
@@ -170,8 +190,11 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 3%, rgba(255,255,255,0.5270483
   
 }
 
+/*--------------------------------------------------------------*/
 /*Skills Container*/
 #skill{
+  width: 100%;
+  position: relative;
   background-color: #0D0D0D;
   text-align: center;
   padding-top: 30px;
@@ -192,9 +215,8 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 3%, rgba(255,255,255,0.5270483
   align-items: center;
 }
 
-.skill-container img{
-  
-}
+
+/*--------------------------------------------------------------*/
 /*Footer Container*/
 footer{
   padding-top: 50px;
@@ -211,9 +233,7 @@ footer{
   justify-items: center;
   align-items: center;
   justify-content: space-around;
-  
-  
-}
+ }
 
 
 .contact-information p{
@@ -221,20 +241,16 @@ footer{
   font-size: 0.8rem;
   padding-bottom: 4px;
   color:#0D0D0D;
-  
-  
-}
+  }
 
 .social-media{
-  
   width: 50%;
   display: inline-flex;
   justify-content: space-around;
-  
-    
+     
 }
 
-
+/*--------------------------------------------------------------*/
 /*Contact Button-footer*/
 
 .contact-button {
@@ -296,9 +312,9 @@ footer{
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
+/*--------------------------------------------------------------*/
 
-
-.footer-menu{
+footer-menu{
   padding-right: 20px;
   padding-left: 40px;
     
@@ -311,44 +327,19 @@ footer{
 .footer-menu a{
   color: white;
   text-decoration: none;
-  
-  
+
 }
 
 .footer-menu a:hover{
   color: #363636;
 }
-/*nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #2d2f30;
-  }
-  
-  nav li {
-    float: left;
-    list-style-type: none;
-    margin-right: 100px;
-  }
-  
-  nav li a {
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 25px 45px;
-    text-decoration: none;
-    font-family: 'Kanit', sans-serif;
-    font-size: 1rem;
-    background-color: #2d2f30;
-    
-  }
-  
-  /* Change the link color to #111 (black) on hover */
 
+
+
+/*--------------------------------------------------------------*/
 
 /*Fuentes Tamanos*/
-h1 {
+*h1 {
   font-size: 4rem;
   color: rgb(255, 255, 255);
 
@@ -387,6 +378,75 @@ p {
 li a{
   text-decoration: none;
 }
+
+/*--------------------------------------------------------------*/
+
+
+
+
+/*Codigo Viejo*/
+
+/*nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2d2f30;
+  }
+  
+  nav li {
+    float: left;
+    list-style-type: none;
+    margin-right: 100px;
+  }
+  
+  nav li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 25px 45px;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1rem;
+    background-color: #2d2f30;
+    
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Organizacion de Elementos banner*/
 
