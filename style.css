@@ -95,7 +95,7 @@ button {
 
 }
 
-@media (max-width: 53rem){
+@media screen and (max-width: 53rem){
   .menu{
     display: none;
   }
@@ -116,8 +116,6 @@ button {
 .banner-container {
    
   position: relative;
-  left: 0;
-  right: 0;
   max-width: 100%;
   z-index: -2;
   width: auto;
@@ -215,6 +213,11 @@ button {
   align-items: center;
 }
 
+.skill-container img{
+  padding: 25px 10px;
+  max-width: 100px;
+  min-width: 50px;
+}
 
 /*--------------------------------------------------------------*/
 /*Footer Container*/
