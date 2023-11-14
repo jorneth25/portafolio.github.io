@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./main.js" ></script>
+    
     <title>My Personal Portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script src="./main.js" defer></script>
+    
+    
   </head>
   <body>
     <header>
@@ -20,12 +23,12 @@
         </div>
         <div class="menu">
           <div class="menu-links">
-            <a href="#">About Me</a>
-            <a href="#">Goals</a>
-            <a href="#">Experience</a>
-            <a href="#">Projects</a>
+            <a href="./aboutme.html" target="_self">About Me</a>
+            <a href="./goals.html" target="_self">Goals</a>
+            <a href="./experience.html" target="_self">Experience</a>
+            <a href="./projects.html" target="_self">Projects</a>
           </div>
-          <button class="contact">Contact</button>
+          <button class="contact" ><a href="/contact.html" target="_self">Contact</a></button>
         </div>
         <div class="menu-btn">
           <i class="fa-solid fa-bars"></i>
@@ -41,26 +44,56 @@
     </header>
     <section class="aboutMe">
       <div class="aboutMe-container">
-        <img
-          src="./resources/PXL_20230922_000527405.jpg"
-          alt=""
-          width="200"
-          height="200"
-        />
-        <h2>Who I Am?</h2>
-        <p>
-          "I am Jorneth, an enthusiast in the world of programming and a lover of
-          video games. <br />
-          My energy and free spirit inspire me to seek perfection in my work as
-          a developer. <br />
-          On my website, I invite you to explore my portfolio, where you will
-          find examples
-          <br />
-          of my passion transformed into beautiful interfaces and web
-          experiences. <br />
-          Join me on this journey where perfection is my goal<br />
-          and the creation of exceptional digital experiences is my priority."
-        </p>
+        <div class="picture-container">
+          <img
+            src="./resources/PXL_20230922_000527405.jpg"
+            alt=""
+            width="600"
+            height="600"
+          />
+        </div>
+
+        <div class="mydescription-container">
+          <div>
+            <h2 class="whoIAm">Who I Am?</h2>
+          <p>
+            "I am Jorneth, an enthusiast in the world <br />of programming and a
+            lover of video games. <br />
+            My energy and free spirit inspire me to <br />seek perfection in my
+            work as a developer. <br />
+            On my website, I invite you to explore <br />my portfolio, where you
+            will find examples
+            <br />
+            of my passion transformed into beautiful<br />
+            interfaces and web experiences. <br />
+            Join me on this journey where perfection <br />is my goal and the
+            creation of <br />
+            exceptional digital experiences is my priority."
+          </p>
+          </div>
+          
+          <div>
+            <button class="readMoreBtn" id="readMoreBtn" type="button">Read more</button>
+          </div>
+        </div>
+
+        <div class="moredescription">
+          <h2>What I do?</h2>
+          <p>
+            I really like coffee, I can drink like 5 cups a day <br />
+            If I'm free, you can guarantee I'll be playing some games. <br />
+            Or maybe sleeping or cooking, cause i love to cook and eat. <br />
+            I have a master degree y Bad Jokes <br />
+            I thinks it is something heredaitary from my ancestors. <br />
+            I used to go the gym and do some body workout, but thats an old me
+            <br />
+            Now Im married and I do some HOME workout (cleaning, washing
+            dishes...)
+          </p>
+          <div>
+            <button class="backBtn" id="backBtn">Back</button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -153,5 +186,6 @@
         />
       </div>
     </footer>
+    
   </body>
 </html>
