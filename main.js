@@ -14,12 +14,6 @@ window.addEventListener("scroll", function () {
 });
 
 
-const bloque = document.querySelector("footer");
-
-bloque.addEventListener("click", () =>{
-  bloque.style.backgroundColor = 'blue'
-});
-
 
 const bloqueWhoIAm= document.querySelector(".mydescription-container")
 const bloqueWhatIDo = document.querySelector(".moredescription")
