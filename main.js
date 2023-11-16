@@ -5,7 +5,7 @@ window.addEventListener("scroll", function () {
   let currScrollPos = window.scrollY;
 
   if (currScrollPos > prevScrollPos) {
-    navBar.style.transform = `translateY(-105%)`;
+    navBar.style.transform = `translateY(-100px)`;
   } else {
     navBar.style.transform = `translateY(0%)`;
   }
@@ -17,8 +17,7 @@ window.addEventListener("scroll", function () {
 const menuBtn= document.querySelector(".menu-btn")
 const dropdownMenu = document.querySelector('.dropdown-menu')
 const hideBtn = document.querySelector('.hide-btn')
-
-
+let lastScrollY= window.scrollY;
 
 function displayMenu (){
   dropdownMenu.style.display='block'
@@ -27,9 +26,27 @@ function displayMenu (){
  function hideMenu (){
   dropdownMenu.style.display='none'
  }
+ 
 
 menuBtn.addEventListener('click', (displayMenu));
 hideBtn.addEventListener('click', (hideMenu));
+
+/*Hidden dropdown menu when scroll*/
+window.addEventListener("scroll", ()=>{
+  if (lastScrollY < window.scrollY){
+    dropdownMenu.classList.add("dropdownMenu--hidden");
+
+  }else{
+    dropdownMenu.classList.remove("dropdownMenu--hidden");
+    
+  }
+  lastScrollY = window.scrollY;
+
+})
+
+
+
+
 
 /*Container About me*/
 const bloqueWhoIAm= document.querySelector(".mydescription-container")
